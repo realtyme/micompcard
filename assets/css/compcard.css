@@ -1,3 +1,8 @@
+:root {
+  --bs-cc-magents: rgba(170,25,155,0.4);
+  --bs-cc-secion-background: rgb(217,217,217);
+}
+
 .section-divider-parent {
   width: 100%;
   position: relative;
@@ -12,7 +17,7 @@
 
 .section-divider-child {
   height: 100%;
-  background: rgba(170,25,155,0.4);
+  background: linear-gradient(0deg, rgba(0,0,0,0.89) 11%, var(--bs-cc-magents)), var(--bs-cc-magents);
   position: absolute;
   top: 0px;
   right: 0px;
@@ -61,7 +66,7 @@
   backdrop-filter: brightness(99%);
   -webkit-backdrop-filter: brightness(99%);
   color: rgb(239,239,239);
-  font-family:  'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   border-radius: 9px;
   background: linear-gradient(28deg, #81427f, #bf78c1);
   margin-bottom: 50px;
@@ -120,10 +125,9 @@
   color: var(--bs-btn-hover-color);
   background: #10499f;
   box-shadow: 3px 1px 17px 4px rgba(166,172,187,0.68);
-  border-width: 1px;
-  border-color: #ced4dd;
   border-radius: 8px;
   transform: translateY(-2px);
+  border: 3px solid #d0d0d0 ;
 }
 
 .footer-icons {
@@ -131,5 +135,52 @@
   height: 24px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.flag {
+  border-radius: 2px;
+  border: 1px solid rgb(255,255,255);
+  margin-left: 10px;
+}
+
+.section-splitter {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.image-outline {
+  border-radius: 10px;
+}
+
+.section-outline {
+  border-top: 3px solid var(--bs-cc-magents) ;
+  border-bottom: 3px solid var(--bs-cc-magents) ;
+}
+
+.banner-model-name {
+  font-family: Acme, sans-serif;
+  font-weight: bold;
+}
+
+.hero-image {
+  height: 350px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 300px) {
+  .hero-image {
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-image {
+    height: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-image {
+    height: 600px;
+  }
 }
 
